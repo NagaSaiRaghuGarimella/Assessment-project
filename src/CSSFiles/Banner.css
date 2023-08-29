@@ -1,0 +1,17 @@
+.Banner {
+    width: 80%;
+    padding: 30px 50px;
+    background-color: rgb(25, 148, 148);
+    border-radius: 5px;
+    height:110px;
+}
+
+.BannerParent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    height:160px;
+  }
+  

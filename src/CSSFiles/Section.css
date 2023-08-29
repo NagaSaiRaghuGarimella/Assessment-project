@@ -1,0 +1,32 @@
+  .SingleSectionParent>div  {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      padding-left: 2rem;
+      margin: 20px;
+  }
+
+  .sectionCards {
+      display: grid;
+  }
+
+  @media (min-width:480px) {
+      .sectionCards {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          gap: 20px;
+      }
+  }
+
+  @media (min-width:768px) {
+      .sectionCards {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 20px;
+      }
+  }
+
+  @media (min-width:1024px) {
+      .sectionCards {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 20px;
+      }
+  }
