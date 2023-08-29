@@ -35,4 +35,4 @@ function Banner() {
     </div>
   );
 }
-export default React.memo(Banner);
+export default Banner;
