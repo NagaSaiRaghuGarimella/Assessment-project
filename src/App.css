@@ -22,9 +22,3 @@ button:hover {
   background-color: rgb(100, 87, 44);
   color: white;
 }
-
-.AllBanners {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}

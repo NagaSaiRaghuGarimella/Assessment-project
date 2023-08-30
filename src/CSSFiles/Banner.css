@@ -15,10 +15,16 @@
     height:160px;
   }
 
+  .AllBanners {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+  }
+  
   .forward{
     position:absolute;
-    top:20%;
-    left:79%;
+    top:24%;
+    left:86%;
     font-size:2rem;
     opacity:0.2;
   }
@@ -28,8 +34,8 @@
   }
   .backward{
     position:absolute;
-    top:20%;
-    left:17.3%;
+    top:23%;
+    left:10%;
     font-size:2rem;
     opacity:0.2;
   }
@@ -40,7 +46,7 @@
 
   @media (max-width:768px){
     .forward{
-        left:76%;
+        left:81%;
     }
   }
   
