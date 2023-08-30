@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { MdOutlineDarkMode, MdLightMode } from 'react-icons/md'
 import '../CSSFiles/Header.css'
 
+// toggling dark and light theme
 function Header() {
     const [themeIcon, setThemeIcon] = useState(false);
 

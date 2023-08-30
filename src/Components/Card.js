@@ -2,18 +2,16 @@ import React from 'react'
 import { useState } from 'react';
 import '../CSSFiles/Card.css'
 
+// display card details
 function Card({ x }) {
     const [inputValue, setInputValue] = useState(x.data_value);
     return (
         <div className="Card">
             <div>{x.id}</div>
-            {x.data &&  ((x.data_type === "image") ?
+            {x.data && ((x.data_type === "image") ?
                 <img src={x.data_value} alt=""></img>
                 : (x.data_type === "progress") ?
-                    (<input type="range" value={inputValue}
-                        onChange={(e) => {
-                            setInputValue(e.target.value);
-                        }} />
+                    (<progress value={x.data_value} max="100"></progress>
                     ) : x.data_type === "text" ? (
                         <p>{x.data_value}</p>
                     ) : x.data_type === "tags" ? (
@@ -21,7 +19,7 @@ function Card({ x }) {
                             {x.data_value.map((dvalue, i) => {
                                 return (
                                     <div key={i} className="Tags">
-                                        {dvalue.split(",").map((v,i) => {
+                                        {dvalue.split(",").map((v, i) => {
                                             return <div key={i} className="tags">{v}</div>;
                                         })}
                                     </div>

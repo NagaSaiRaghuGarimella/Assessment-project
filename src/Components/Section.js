@@ -4,6 +4,7 @@ import { sectionArray, cardArray } from '../JsonData/data';
 import Card from './Card';
 import '../CSSFiles/Section.css'
 
+// display card details based on sections
 function Section() {
     const [cardsState, setCardsState] = useState([false, false, false]);
 
