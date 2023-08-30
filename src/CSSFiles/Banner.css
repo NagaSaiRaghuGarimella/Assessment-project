@@ -18,7 +18,7 @@
   .forward{
     position:absolute;
     top:20%;
-    left:80%;
+    left:79%;
     font-size:2rem;
     opacity:0.2;
   }
@@ -36,5 +36,11 @@
   .backward:hover{
     opacity:0.6;
     transform:scaleX(0.5);
+  }
+
+  @media (max-width:768px){
+    .forward{
+        left:76%;
+    }
   }
   
