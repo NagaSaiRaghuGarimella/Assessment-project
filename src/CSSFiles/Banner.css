@@ -14,4 +14,27 @@
     align-items: center;
     height:160px;
   }
+
+  .forward{
+    position:absolute;
+    top:20%;
+    left:80%;
+    font-size:2rem;
+    opacity:0.2;
+  }
+  .forward:hover{
+    opacity:0.6;
+    transform:scaleX(0.5);
+  }
+  .backward{
+    position:absolute;
+    top:20%;
+    left:17.3%;
+    font-size:2rem;
+    opacity:0.2;
+  }
+  .backward:hover{
+    opacity:0.6;
+    transform:scaleX(0.5);
+  }
   

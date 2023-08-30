@@ -3,6 +3,7 @@ import React from "react";
 import "../CSSFiles/Banner.css";
 import { useEffect, useState } from "react";
 import { bannersArray } from "../JsonData/data";
+import {MdArrowForwardIos, MdArrowBackIosNew} from 'react-icons/md';
 
 // Automatic slide banners
 function Banner() {
@@ -17,6 +18,7 @@ function Banner() {
   }, [count])
   return (
     <div className="AllBanners">
+      <MdArrowForwardIos className="forward" onClick={()=>setCount((prevCount)=>(prevCount===bannersArray.length-1?0:prevCount+1))}/>
       {bannersArray.map((x, index) => {
         return (index === count) &&
           <div className="BannerParent" key={x.id_no}>
@@ -27,12 +29,13 @@ function Banner() {
             </div>
             {x.button && (
               <Link to={x.link}>
-                <button className="btn">{x.btn_name}</button>
+                <button>{x.btn_name}</button>
               </Link>
             )}
 
           </div>
       })}
+      <MdArrowBackIosNew className="backward" onClick={()=>setCount((prevCount)=>(prevCount===0?bannersArray.length-1:prevCount-1))}/>
     </div>
   );
 }
